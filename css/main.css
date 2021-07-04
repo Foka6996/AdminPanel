@@ -1,0 +1,286 @@
+@font-face {
+    font-family: Nunito-Bold;
+    src: url("../fonts/Nunito-Bold.ttf");
+}
+
+@font-face {
+    font-family: Nunito-regular;
+    src: url("../fonts/Nunito-regular.ttf");
+}
+
+body {
+    margin: 0;
+    font-family: Nunito-regular, sans-serif;
+}
+
+#main {
+    display: flex;
+
+}
+
+#main-block {
+    background: #F7F7F7;
+    width: 250px;
+    padding: 0 17px;
+    border-right: 1px solid #E2E2E2;;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+#logo {
+    padding: 25px 0;
+    text-align: center;
+}
+
+#logo a {
+    font-size: 16px;
+    font-family: Nunito-Bold;
+    color: #4F4E4F;
+    text-decoration: none;
+}
+
+#logo a span {
+    color: #467DF2;
+}
+
+
+#main-info .main-information {
+    text-decoration: none;
+    display: flex;
+    padding: 17px 15px;
+    align-items: center;
+
+}
+
+.imgsvg {
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.fill {
+    fill: #858796;
+    vertical-align: middle;
+}
+
+#main-info .main-information:hover span {
+    color: white;
+
+}
+
+#main-info .main-information:hover svg {
+    fill: white;
+
+}
+
+.main-information .fill:hover {
+    fill: white;
+}
+
+.main-information span {
+    font-size: 14px;
+    line-height: 19px;
+    color: #858796;
+    margin-left: 10px;
+}
+
+.main-information:hover {
+    background-color: #467df2;
+    border-radius: 5px;
+    fill: white;
+}
+
+#content {
+    flex-grow: 1;
+}
+
+#header {
+    background: #F7F7F7;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+#header-search {
+    display: flex;
+}
+
+#header-search svg {
+    margin-right: 20px;
+}
+
+#header-search .main-information {
+    text-decoration: none;
+    border: 0;
+    color: #858796;
+    background: none;
+    margin: 0 40px;
+}
+
+#header-search .main-information:last-child {
+    margin: 0;
+}
+
+#header-search .main-information:hover {
+    color: #3D63D2;
+}
+
+#header-search .main-information:hover svg {
+    fill: #3D63D2;
+}
+
+#search svg:hover {
+    fill: #3D63D2;
+}
+
+
+.icon {
+    background: #EFEFF5;
+    background-image: url("../images/miscellaneous1.png");
+    background-position: 19px;
+    background-repeat: no-repeat;
+    border: 1px solid #E2E2E2;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 373px;
+    height: 40px;
+    padding: 12px 20px 12px 40px;
+    outline: 0;
+    margin-right: 40px;
+    font-size: 14px;
+    line-height: 19px;
+
+}
+
+#search button {
+    background: #467DF2;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: Nunito-Bold;
+    color: #FFFFFF;
+    padding: 10px 18px;
+    border: 0;
+    outline: 0;
+    margin-left: 40px;
+}
+
+#search button:hover {
+    background: #2F54A3;
+}
+
+#header-search-result {
+    display: none;
+    width: 150px;
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0 4px 20px rgba(102, 102, 102, 0.15);
+    border-radius: 10px;
+    padding: 30px 20px;
+    top: 64px;
+    left: 245px;
+    box-sizing: border-box;
+}
+
+#header-search .fill {
+    margin-left: 5px;
+}
+
+#menu:hover #header-search-result {
+    display: block;
+}
+
+.header-search-result-item {
+    font-size: 14px;
+    line-height: 19px;
+    color: #686464;
+}
+
+.header-search-result-item:last-child {
+    margin-top: 15px;
+}
+
+#block-content {
+    background: #EDEEF3;
+    padding: 0 40px 60px;
+}
+
+#title {
+    font-family: Nunito-Bold;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 48px;
+    color: #4F4E4F;
+    padding-top: 25px
+}
+
+#block-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.block-info-video {
+    background: #FFFFFF;
+    box-shadow: 0 4px 20px rgba(102, 102, 102, 0.15);
+    border-radius: 10px;
+    width: 350px;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 25px;
+    font-family: Nunito-Bold;
+    color: #4F4E4F;
+    max-width: 297px;
+    padding: 20px 26px 0;
+}
+
+.time {
+    font-size: 15px;
+    line-height: 30px;
+    color: #4F4E4F;
+    padding: 8px 26px 0;
+}
+
+.svg-image {
+    padding: 26px 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.block-info-video .main-information {
+    text-decoration: none;
+    margin-right: 41px;
+    border: 0;
+    background: 0;
+}
+
+.block-info-video .main-information:last-child {
+    margin-right: 0;
+}
+
+#block-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.block-info-video {
+    margin: 33px 20px 0 20px;
+}
+
+.block-info-video img {
+    border-radius: 10px 10px 0 0;
+
+}
+
+.block-info-video:hover {
+    box-shadow: 0 0 8px 0;
+}
+
+#block-content .main-information:hover svg {
+    fill: #467DF2;
+}
